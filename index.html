@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žofie Čiháková</title>
+    <link rel="stylesheet" href="webbb.css">
+</head>
+<body>
+
+<header>
+    <h1>Žoffie Čiháková</h1>
+    <nav>
+        <ul>
+            <li><button onclick="showSection('about')">O mně</button></li>
+            <li><button onclick="showSection('skills')">Dovednosti</button></li>
+            <li><button onclick="showSection('projects')">Zkušenosti</button></li>
+            <li><button onclick="showSection('hobbies')">Koníčky</button></li>
+            <li><button onclick="showSection('contact')">Kontakt</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="about" class="content active">
+        <h2>O mně</h2>
+        <p>zpevačka, herečka, skladatelka a textařka Ahoj! Jmenuji se Žoffie! narodila jsem v roce 2009 v Praze. </p>
+        <p>Ahoj! Jmenuji se Žoffie! narodila jsem v roce 2009 v Praze. Studuji Pažskou konzervatoř oddelení populární hudby obor populární zpěv</p>
+        <p>V roce 2024 jsem nastoupila na Pažskou konzervatoř oddelení populární hudby obor populární zpěv. </p>
+    </section>
+
+    <section id="skills" class="content">
+        <h2>Dovednosti</h2>
+        <ul>
+            <li>populární zpěv</li>
+            <li>základy herectví</li>
+            <li>klavír</li>
+            <li>hudební teorie</li>
+            <li>skládání a psaní textu</li>
+        </ul>
+
+        <h3>Co se učím</h3>
+        <ul>
+            <li>herectví</li>
+            <li>kytara</li>
+            <li>práce v nahrávacích programech např. FL studio</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="content">
+        <h2>Zkušenosti</h2>
+
+        <div class="card">
+            <h3>kapela</h3>
+            <p>Dlouho jsem zpívala v kapele Sheiisawallflower. Hráli jsme v různých podnicích i klubech a na festivalech. Jeden z našich posledních výstupů byl Croosclubu.
+                Od ledna 2026 už nejsem součástí této kapely. A zakládáme společně s jinými muzikanty RaB, funk, soul a reagge skupinu. 
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Divadlo</h3>
+            <p>Od 10 let jsem hrála ve skromném letním divadle v liberci. Prvně jsem hrála malé role, ale poslední 4 roky divadla jsem hlavní. </p>
+        </div>
+
+        <div class="card">
+            <h3>"modelka"</h3>
+            <p>Skromně jsem párkrát vystupovala jako modelka pro fotografi na portfolio studentů z filmové školy.</p>
+        </div>
+    </section>
+
+    <section id="hobbies" class="content">
+        <h2>Koníčky</h2>
+        <ul>
+            <li>zpěv, herectví a obecně hudba</li>
+            <li>motokros</li>
+           
+        </ul>
+
+        <p>Ve volném čase jsem s přáteli a často spolu tvoříme nové věci.</p>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Kontakt</h2>
+        <p>Email: zozalemur@gmail.com</p>
+        <p>Instagram: @z.cihakova</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Můj osobní web</p>
+</footer>
+
+<script>
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.content');
+    sections.forEach(section => {
+        section.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+}
+</script>
+
+</body>
+</html>

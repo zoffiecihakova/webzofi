@@ -1,0 +1,70 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #e2aee2;
+}
+
+header {
+    background: linear-gradient(90deg, #000000, #e0a4e0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav button {
+    padding: 10px 15px;
+    border: none;
+    background: #c293bf;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button:hover {
+    background: #999;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content {
+    display: none;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+/* Karty (projekty) */
+.card {
+    background: #fafafa;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #333;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
